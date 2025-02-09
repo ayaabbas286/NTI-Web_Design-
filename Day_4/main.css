@@ -2,8 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 16px;
   font-family: "Livvic", serif;
+
+}
+:root {
+  --main-top-margin: 50px;
 }
 .header {
   background-color: #000000;
@@ -25,7 +28,27 @@
   float: left;
   width: 50%;
   margin-left: 180px;
-  margin-top: 15px;
+  margin-top: 10px;
+  animation: LeftToRight 2s linear 1;
+  
+}
+/*logo animation*/
+@keyframes LeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/*menue animation*/
+@keyframes RightToLeft {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 .right {
   float: right;
@@ -34,7 +57,7 @@
 ul {
   list-style-type: none;
   overflow: hidden;
-
+  animation: RightToLeft 1s linear 1;
 }
 
 ul li {
@@ -66,7 +89,7 @@ li a:hover {
 .title {
   color: white;
   font-size: 72px;
-  margin-top: 50px;
+  margin-top: var(--main-top-margin);
 }
 .logo-second {
   float: left;
@@ -74,31 +97,32 @@ li a:hover {
   margin-left: 190px;
   margin-top: 50px;
 }
-.logo-second span{
+.logo-second span {
   color: rgb(255, 99, 46);
   font-size: 55px;
-font-weight: 300;}
-.sub-title{
+  font-weight: 300;
+}
+.sub-title {
   color: white;
   font-size: 40px;
-  width:550px;
+  width: 550px;
   margin-top: 20px;
 }
-hr{
-  width:70px;
+hr {
+  width: 70px;
   margin-top: 30px;
   margin-bottom: 30px;
   border: 0;
-  border-top:4px solid rgba(255, 255, 255);
+  border-top: 4px solid rgba(255, 255, 255);
 }
-.sub-txt{
+.sub-txt {
   color: white;
   font-size: 18px;
   width: 500px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-button{
+button {
   background-color: transparent;
   padding: 15px 32px;
   text-align: center;
@@ -110,14 +134,49 @@ button a {
   color: white;
   text-decoration: none;
 }
-button:hover{
-  background-color: rgb(255, 99, 46,0.2);
+button:hover {
+  background-color: rgb(255, 99, 46, 0.2);
 }
 /*right side (Form) styling*/
-.form-title{
-  color: white;
-  font-size: 36px;
+.form-body {
+  float: left;
+  position: relative;
+  margin-top: 110px;
+  margin-left: 90px;
+  background-color: #ffffff;
+  height: 420px;
+  width: 400px;
+  border-radius: 2px;
+  text-align: center;
 }
-.form-body{
-  height: 500px;
+.form-title {
+  font-size: 24px;
+  color: #383838;
+  background-color: #0000001a;
+  padding: 20px;
+}
+.form-title span {
+  color: rgb(255, 99, 46);
+  font-size: 16px;
+  margin: 0px 5px;
+}
+.form-body input {
+  width: 80%;
+  padding: 10px;
+  margin-top: 40px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}
+.form-body button {
+  width: 100%;
+  background-color: rgba(255, 98, 46, 0.932);
+  color: white;
+  border: none;
+  font-size: 18px;
+  position: absolute;
+  padding: 20px;
+  bottom: -4px;
+  left: -2px;
+  font-family: Arial, Helvetica, sans-serif;
 }
