@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Day3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header,
+      .footer {
+        background-color: #eee;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+      }
+      .side {
+        margin: 10px;
+        border: 2px dashed red;
+        width: 250px;
+        padding: 20px;
+      }
+      ol {
+        list-style-type: none;
+        background-color: #eee;
+        width: 250px;
+        margin: 10px;
+      }
+      li {
+        margin-left: 20px;
+      }
+      input {
+        margin-bottom: 10px;
+      }
+      .main {
+        background-color: rgb(228, 152, 255);
+        border: 2px solid #eee;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <table width="100%">
+      <tr>
+        <td colspan="3"><div class="header">this is the page header</div></td>
+      </tr>
+      <tr>
+        <td bgcolor="#eee">
+          <div class="side" >
+            <label>Username</label>
+            <input type="text" />
+            <br />
+            <label>Password</label>
+            <input type="text" />
+            <br />
+            <input type="checkbox" />
+            <label>Remember Me</label>
+            <br />
+            <button>Login</button>
+          </div>
+        </td>
+        <td colspan="2" class="main">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            expedita nostrum tempora culpa pariatur odit fugit quia hic neque
+            facere.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" bgcolor="#eee">
+          <ol>
+            <h3>Site Menu</h3>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+            <li><a href="#">Link4</a></li>
+            <li><a href="#">Link5</a></li>
+          </ol>
+        </td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td colspan="3"><div class="footer">this is the page Footer</div></td>
+      </tr>
+    </table>
+  </body>
+</html>

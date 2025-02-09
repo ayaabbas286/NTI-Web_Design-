@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+div {
+  margin: 50px auto;
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+  border: 1px solid black;
+}
+h3 {
+  text-align: center;
+  color: blue;
+  margin: 50px auto;
+}
+h3:hover {
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.5s;
+  font-size: 40px;
+}
+ul {
+  list-style-image: url(../Day_4/build.jpg);
+  padding: 0;
+}
