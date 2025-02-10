@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* .container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 5px;
+} */
+/* Flat UI to pick colors*/
+/* .products {
+    width: 500px;
+    height: 500px;
+  background-color: #f1f1f1;
+}
+.items {
+  background-color: blue;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 80px;
+  box-shadow: 5px 5px 4px #000000 , -5px -5px 4px #d40c0c;
+} */
+/* p{
+    text-shadow: 2px 1px 3px #000000;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+} */
+/* Flex */
+.products {
+  background-color: #e8e8e8;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+  align-content: center;
+}
+.products div {
+  width: 200px;
+  height: 200px;
+display: flex;
+justify-content: center;
+  align-items: center;
+  background-color: #f5cccc;
+  border-radius: 5px;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 3px 3px 4px #000000;
+  order: 3;
+}
+.products div:nth-child(5){
+    background-color: #00dea7;
+}
+.products div:nth-child(10){
+    background-color: #b1e90b;
+    border-radius: 50%;
+    order: 1;
+}
+.products div:nth-child(15){
+    background-color: #b1e90b;
+    border-radius: 50%;
+    order: 2;
+
+
+}
