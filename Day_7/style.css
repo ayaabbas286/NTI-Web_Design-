@@ -3,39 +3,9 @@
   padding: 0;
   margin: 0;
 }
-/* .container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #000000;
-  border-radius: 5px;
-} */
-/* Flat UI to pick colors*/
-/* .products {
-    width: 500px;
-    height: 500px;
-  background-color: #f1f1f1;
-}
-.items {
-  background-color: blue;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 80px;
-  box-shadow: 5px 5px 4px #000000 , -5px -5px 4px #d40c0c;
-} */
-/* p{
-    text-shadow: 2px 1px 3px #000000;
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 10px;
-    font-family: Arial, sans-serif;
-    margin-top: 50px;
-} */
 /* Flex */
 .products {
-  background-color: #e8e8e8;
+  background-color: #f9f9f9;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -45,8 +15,8 @@
 .products div {
   width: 200px;
   height: 200px;
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #f5cccc;
   border-radius: 5px;
@@ -57,18 +27,70 @@ justify-content: center;
   box-shadow: 3px 3px 4px #000000;
   order: 3;
 }
-.products div:nth-child(5){
-    background-color: #00dea7;
+.products div:nth-child(5) {
+  background-color: #00dea7;
 }
-.products div:nth-child(10){
-    background-color: #b1e90b;
-    border-radius: 50%;
-    order: 1;
+.products div:nth-child(10) {
+  background-color: #b1e90b;
+  border-radius: 50%;
+  order: 1;
 }
-.products div:nth-child(15){
-    background-color: #b1e90b;
-    border-radius: 50%;
-    order: 2;
-
-
+.products div:nth-child(15) {
+  background-color: #b1e90b;
+  border-radius: 50%;
+  order: 2;
+}
+/* Task seven*/
+.main-section {
+  background-color: #000000;
+  padding: 20px;
+  margin:50px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Livvic", serif;
+}
+/*right section styling */
+.rightSection {
+  padding: 20px;
+  width: 50%;
+  margin-TOP:50px;
+}
+.rightSection h3 {
+  font-size: 24px;
+  /* padding: 20px; */
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  color: #b1e90b;
+}
+.rightSection p {
+  font-size: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.rightSection button {
+  width: 200px;
+  height: 50px;
+  background-color: #b1e90b;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 24px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.lefttSection img {
+  width: 700px;
+  height: 600px;
+  padding: 20px;
+}
+/**/
+.d-flex{
+  display: flex;
+  justify-content: space-around;
+}
+.p-card{
+margin: 100px 0px;
 }
