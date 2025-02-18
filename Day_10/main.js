@@ -28,3 +28,10 @@ function product_cost(quatity, price) {
   var cost = document.getElementById("cost");
   cost.textContent = "" + price * quatity;
 }
+function profit() {
+
+    // var price = document.getElementById("price").value;
+    // var quatity = document.getElementById("quantity").value;
+    // var cost = document.getElementById("cost");
+    // cost.textContent = "" + price * quatity;
+  }
